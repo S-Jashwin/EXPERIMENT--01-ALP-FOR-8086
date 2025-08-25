@@ -79,54 +79,69 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP
 ```
-  MOV AL,88H
-  MOV BL,65H
-  ADD AL,BL
-  HLT
+org 100h
+
+mov ax,8ba3h
+mov bx,[bx] 
+add ax,bx
+
+ret
 ```
 
 ## Output 
 
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/131bdb87-cd05-43b1-aaec-e2a14c24274a" />
+<img width="1286" height="777" alt="image" src="https://github.com/user-attachments/assets/1d75ff7c-0b7b-4eff-a09d-264bf295b013" />
+
 
 
  
 ## Subtraction   of 8 bit numbers  ALP
 ```
-  MOV AL,84H
-  MOV BL,63H
-  SUB AL,BL
-  HLT
+org 100h
+
+mov ax,8ba3h
+mov bx,[5dbdh] 
+mov cx,ax
+sub ax,cx
+
+ret
 ```
  
 ## Output  
 
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ad3a0780-0f8e-4751-8384-3f54f9b57143" />
+<img width="1250" height="841" alt="image" src="https://github.com/user-attachments/assets/e50c2052-9320-44a7-bf73-ab77422401fc" />
+
 
 ## Multiplication alp
 ```
-  MOV AL,33H
-  MOV BL,44H
-  MUL BL
-  HLT
+org 100h
+
+mov ax,8ba3h
+mov bx,5dbdh
+mul bx
+
+ret
 ```
 
 
  ## Output  
 
- <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/929fc041-597b-49a8-a831-0a40c20ad3f7" />
+ 
 
 
 
 ## Division alp 
 ```
-  MOV AL,68H
-  MOV AL,18H
-  DIV BL
-  HLT
+org 100h
+
+mov ax,8ba3h
+mov bx,[5dbdh]
+div bx
+
+ret
 ```
 ## Output  
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/6c672e7a-75fb-46ae-bce0-9741a11062b5" />
+<img width="1226" height="654" alt="image" src="https://github.com/user-attachments/assets/b1e05bd4-4e1d-4a7e-b4e7-98ad27440b09" />
 
 
 
