@@ -126,9 +126,11 @@ ret
 
  ## Output  
 
+ <img width="1431" height="691" alt="image" src="https://github.com/user-attachments/assets/3cfad492-0e92-4925-8626-ef7bda4bc987" />
+
+
+
  
-
-
 
 ## Division alp 
 ```
